@@ -1,0 +1,105 @@
+/* Apply a background image to the body */
+/* Apply a background image to the body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('bal.jpg'); /* Set the image as background */
+  background-size: cover; /* Ensure the background covers the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  min-height: 100vh; /* Ensure the body is at least the height of the viewport */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+
+/* Container for centering the card */
+.container {
+  text-align: center;
+  position: relative;
+  z-index: 2; /* Ensure content appears above the background */
+}
+
+/* Card styling */
+.card {
+  background: rgba(255, 255, 255, 0.8); /* White background with transparency for contrast */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(193, 105, 105, 0.2); /* Soft shadow for depth */
+  max-width: 400px;
+  transition: 0.3s ease-in-out;
+}
+
+h1 {
+  color: #f93094; /* Bright girly pink title */
+}
+
+p {
+  font-size: 18px;
+  color: #d81b60; /* Darker pink text for contrast */
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* Yes button with a soft pastel pink color */
+#yes-btn {
+  background: #ff66b2; /* Girly pink button */
+  color: white;
+}
+
+#yes-btn:hover {
+  background: #f50057; /* Darker pink on hover */
+}
+
+/* No button with a soft pastel pink */
+#no-btn {
+  background: #f1a5c0; /* Light pink button */
+  color: white;
+}
+
+#no-btn:hover {
+  background: #f48fb1; /* Slightly darker pink on hover */
+}
+
+/* Hover Effect for "Want to know how much I love you?" button */
+#love-btn {
+  background-color: #ff66b2;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+#love-btn:hover {
+  background-color: #f50057; /* Darker pink on hover */
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* Hover Effect for "Back to Proposal" button */
+button:hover {
+  background: #ff66b2; /* Light pink on hover */
+}
+
+button:focus {
+  outline: none; /* Remove outline on click */
+}
+
+.hidden {
+  display: none;
+}
